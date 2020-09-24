@@ -33,6 +33,9 @@ V8_ snapshot.lib
 
 (the original author only deals with the V8 engine, but not the entire nodejs. There is no such function as setTimeout, Nodejs4.4.0 is a single thread, which uses its own UV event callback mechanism. If nodejs is simply compiled to DLL, it will cause program blocking. It is necessary to use multithreading, modify nodejs source code, control UV signal, trigger by UV callback, and modify related exception handling, etc.)
 
+
+( vcbuild.bat By default, x86 solution project is created. To create x64 solution, you need to add a parameter， run vcbuild.bat x64 )
+
 ===========================================================================================================================
 1.node版本为4.4.0  因为这个版本接近原项目的开发时间，测试过可以正常编译 
 https://nodejs.org/dist/v4.4.0/
@@ -58,3 +61,5 @@ v8_snapshot.lib
 6.编译DLL,重命名v8dll.dll
 
 (原作者仅V8处理了V8引擎，没有处理整个nodejs，像setTimeout这样的功能是没有的， nodejs4.4.0是一个单线程，它使用了自己的uv事件回调机制，如果简单地编译nodejs到DLL使用，会造成程序阻塞，必须使用多线程，及修改nodejs的源码，对uv信号进行控制，使用uv的回调触发，以及需要修改相关的异常处理等)
+
+(vcbuild.bat 默认创建的是X86的解决方案项目，创建X64的解决方案，需要加一个参数， 运行 vcbuild.bat x64 ) 
