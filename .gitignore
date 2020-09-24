@@ -1,0 +1,10 @@
+.vs
+Release
+Debug
+node-v0.10.45.tar
+node-v4.4.0.tar
+node-v4.4.0.tar1
+node-v4.4.0.tar.gz
+node-v0.10.45.tar.gz
+*lib
+include
